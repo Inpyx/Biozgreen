@@ -24,7 +24,7 @@
 
 .ui.container.fluid {
   @media only screen and(max-width: $mobile-bp) {
-    width: auto !important;
+    width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     padding-left: 1em !important;

@@ -1,8 +1,9 @@
 .topbar {
-  border-bottom: 1px solid #EEEEEE;
-  color: #666666;
+  border-bottom: 1px solid #666666;
+  color: white;
   height: 30px;
-  margin: 5px auto 0;
+  margin: 0px auto 0;
+  background: #7fb700;
 
 
   .list {
@@ -13,23 +14,21 @@
       padding-top:0 !important;
       padding-bottom:0 !important;
       line-height: initial !important;
-
+   
       i {
-        color:#332B24;
+        color:#106837;
         font-size:18px;
       }
 
       a {
-        color:#666666;
+        color:#106837;
         font-size:13px;
         text-transform: uppercase;
       }
-
+    
     }
 
-
-
-    span.text,
+      span.text,
     .menu {
       @media screen and (max-width: $mobile-bp) {
         display: none;
@@ -62,7 +61,9 @@
         color: #475993 !important;
       }
       &.instagram.icon {
-        color: #DE943F !important;
+        color: #106837 !important;
+        margin-left: 43px;
+        
       }
       &.twitter.icon {
         color: #2795e9 !important;

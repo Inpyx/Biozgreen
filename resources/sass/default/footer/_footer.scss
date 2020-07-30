@@ -1,6 +1,6 @@
 .newsletter-bar {
 	padding-bottom: 10px;
-	background: #333;
+	background: #A0c964 !important;
 	position: relative;
 
 	i.envelope {
@@ -16,7 +16,7 @@
 		font-size: 18px;
 		font-weight: 700;
 		text-transform: uppercase;
-		border-right: 1px solid lighten($secondary-color, 30);
+		border-right: #555;
 		padding-right: 15px;
 		margin: 0;
 		float: left;
@@ -29,9 +29,10 @@
 	}
 
 	span.text {
-		color: #999;
+		color: white;
 		font-size: 12px;
 	}
+
 
 
 	.inline.fields {
@@ -95,7 +96,7 @@
 			margin-left: 5px;
 			color: #ffffff;
 			text-transform: uppercase;
-			background: lighten($secondary-color , 20);
+			background: #106837;
 			font-size: 13px;
 
 			@media screen and (max-width: $mobile-bp) {
@@ -115,7 +116,7 @@
 }
 
 .footer {
-    background-color: $secondary-color !important;
+    background-color: #f2f6f9 !important;
     padding-bottom: 20px !important;
 
     > .ui.container {
@@ -124,7 +125,20 @@
                 padding-bottom: 0 !important;
             }
         }
-    }
+		}
+		
+		.divider-footer{
+			margin-top: 25px;
+		}
+
+		.title-li-footer{
+			color: $primary-color !important;
+		}
+
+		.btn-duvidas:hover{
+			background-color: $primary-color;
+			color: white;
+		}
 
     .listMobile {
         .column {
@@ -158,7 +172,8 @@
         a {
             i.icon {
                 font-size: 1.7em;
-                line-height: 0.95em;
+								line-height: 0.95em;
+								color: #604949;
             }
         }
     }
@@ -186,7 +201,7 @@
                 text-align: left !important;
                 margin: 10px 0 0 0;
                 display: none;
-                background: lighten($secondary-color, 5);
+                background: white;
             }
         }
 
@@ -233,7 +248,8 @@
     }
 
     .tireDuvidas {
-        background: #fff;
+				background: #fff;
+				border: 1px solid $primary-color;
 
         h5 {
             color: $black;
@@ -285,8 +301,8 @@
 }
 
 .subFooter {
-	background-color: $secondary-color;
-	border-top:1px solid lighten($secondary-color,10);
+	background-color: white;
+	border-top:1px solid #dad5d5;
 
 	@media screen and (max-width: $mobile-bp) {
 		text-align: center;
@@ -307,16 +323,18 @@
 
 	.textoEmpresa {
 		text-align: center;
+		
 
 		>h6 {
-			color:#fff;
+			color:#555;
 			font-size:12px;
 			font-weight: normal;
 			margin:0 0 10px 0;
 			display: inline-block;
 		}
 		> address {
-			color:#fff;
+			color:#106837
+			;
 			font-size:12px;
 			font-weight: normal;
 			font-style: normal;

@@ -12,7 +12,7 @@
                         </div>
                         @if ((Session["UserAuthenticated"] == null || (Convert.ToBoolean(Session["Guest"]) == true)) && Session["Seller"] == null)
                         {
-                            <div class="item">
+                           <div class="item customer">
                                 <a href="/customer" title="Área do Cliente">
                                     <i class="user icon regular"></i>
                                     <span class="text">Área do Cliente</span>

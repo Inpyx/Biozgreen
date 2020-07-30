@@ -15,7 +15,7 @@
             if (category.Level.Length == 2)
             {
               <li>
-                <a href="@category.UrlFriendly" class="item" title="@category.Name">
+                <a href="@category.UrlFriendly" class="item menu-bullet" title="@category.Name">
                   @category.Name
                   @if (category.ChildCategories != null && category.ChildCategories.Any())
                   {
@@ -41,7 +41,7 @@
                                       <div class="ui divider"></div>
                                       foreach (var subCategoryLevel2 in subCategoryLevel1.ChildCategories)
                                       {
-                                        <a class="item" href="@subCategoryLevel2.UrlFriendly" title="@subCategoryLevel2.Name">@subCategoryLevel2.Name</a>
+                                        <a class="item menu-bullet" href="@subCategoryLevel2.UrlFriendly" title="@subCategoryLevel2.Name">@subCategoryLevel2.Name</a>
                                       }
                                     }
                                   </div>
@@ -75,11 +75,12 @@
                   </div>
                 }
               </li>
+
             }
             else
             {
               <li>
-                <a class="item" href="~/category/index/@category.IdCategory" title="@category.Name"><span>@category.Name</span></a>
+                <a class="item menu-bullet" href="~/category/index/@category.IdCategory" title="@category.Name"><span>@category.Name</span></a>
               </li>
             }
           }

@@ -31,8 +31,8 @@
     > li {
       > a {
         white-space: nowrap !important;
-        padding-left: 11px !important;
-        padding-right: 11px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
         .fa {
           display: none;
           &.fa-home {
@@ -297,9 +297,8 @@
     overflow: hidden;
     transition: all .4s ease-in-out;
     &.wsoffcanvasopener {
-        
       }
-    }
+  }
   .overlapblackbg {
     left: 0;
     z-index: 102;
@@ -331,14 +330,14 @@
       }
     
     .wsmain {
-      left: 0;
+      left: -30px;
       transition: all .4s ease-in-out;
       }
 
     .titleMenu {
       padding: 1em;
       background: darken($primary-color, 5);
-      color: #fff;
+      color: #604949;
       font-weight: bold;
           display: block !important;
     }
@@ -502,7 +501,7 @@
           text-decoration: underline;
           }
         }
-      &:hover > a {
+        &:hover > a {
         background-color: $colormercuryapprox !important;
         color: $colorstormdustapprox;
         }
@@ -537,3 +536,17 @@
     }
     
   }
+
+  @media only screen and(max-width: 780px){
+    .menu-bullet::before{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 919px){
+    .wsmain {
+        background: white;
+}
+
+}
+

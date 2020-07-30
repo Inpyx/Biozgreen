@@ -9,6 +9,7 @@ headlogo {
   background: rgb(255,255,255);
   margin-top: 0px;
 
+    
   &.fixed {
     box-shadow: rgba(0,0,0,.3) 0px 0px 10px 0px;
 
@@ -16,15 +17,22 @@ headlogo {
       box-shadow: none;
       border-bottom: 1px solid #eee;
     }
-
-    .blocoBusca {
+  .blocoBusca {
       top: 90px;
     }
   }
 
+  .Guilherme-usuario{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+  }
+
+
   .ui.container {
     padding-top: 0px !important;
     padding-bottom: 10px !important;
+  
   }
 
   i.circular.icon {
@@ -37,6 +45,7 @@ headlogo {
   }
 
   .searchcolumn {
+    padding: 0 !important;
     .ui.icon.input > i.icon {
       opacity: initial;
     }
@@ -112,6 +121,8 @@ headlogo {
     cursor: pointer;
     float: right;
     line-height: 36px;
+    
+  
 
     .ui.basic.button {
       > span {
@@ -122,6 +133,7 @@ headlogo {
     }
   }
 }
+
 
 .wishlist {
   text-align: right !important;

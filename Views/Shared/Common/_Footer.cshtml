@@ -107,11 +107,11 @@
                     <div class="row one column no padding listMobile">
                         @Html.Action("GetList", "EventList")
                         <div class="column">
-                            <h4 class="ui inverted header">Central de Relacionamento <i class="ui icon chevron right mobile only"></i></h4>
+                            <h4 class="ui inverted header title-li-footer">Central de Relacionamento <i class="ui icon chevron right mobile only"></i></h4>
                             <div class="ui inverted link list">
                                 <p>Preparada para esclarecer suas dúvidas e problemas.</p>
                                 <h5>SAC: @LojaCorp.Control.Company._Company.Phone1</h5>
-                                <a href="/fale-conosco" class="ui button text uppercase tireDuvidas margin top bottom medium">Tire suas dúvidas</a>
+                                <a href="/fale-conosco" class="ui button text uppercase tireDuvidas margin top bottom medium btn-duvidas">Tire suas dúvidas</a>
                             </div>
                         </div>
                     </div>
@@ -122,11 +122,11 @@
                 <div class="ui grid stackable">
                     <div class="row one column no padding">
                         <div class="column seven wide tablet sixteen wide computer margin bottom large">
-                            <h4 class="ui inverted header">FORMAS DE PAGAMENTO</h4>
+                            <h4 class="ui inverted header title-li-footer">FORMAS DE PAGAMENTO</h4>
                             @Html.Partial("~/Views/Shared/Common/_Payments_List.cshtml")
                         </div>
                         <div class="column seven wide tablet sixteen wide computer middle aligned">
-                            <h4 class="ui inverted header">SEGURANÇA</h4>
+                            <h4 class="ui inverted header title-li-footer">SEGURANÇA</h4>
                             <div class="ui horizontal list selos">
                                 @Html.Action("EBit", "Company")
                                 @Html.Action("GetCompanySeal", "Company")
@@ -141,9 +141,16 @@
                 </div>
             </div>
         </div>
+
         <div class="row text center">
-            <div class="ui divider"></div>
-            @Html.Partial("Common/_JetLogo")
+            <div class="ui divider divider-footer"></div>
+                <a href="http://www.inpyx.com/" title="Inpyx - Tecnologia e InteligÃªncia" target="_blank">
+		            <img class="ui middle aligned image logo" src="/assets/image/logo/inpyx.png" alt="Inpyx - Tecnologia e InteligÃªncia" title="Inpyx - Tecnologia e InteligÃªncia">
+	            </a>
+
+                   <img class="ui middle aligned image logo" src="/assets/image/logo/logo-jet.png" alt="JetNeo">
+	            </a>
+           <!-- @Html.Partial("Common/_JetLogo")-->
         </div>
     </div>
 </div>
@@ -152,7 +159,7 @@
         <div class="ui column grid">
             <div class="row stackable">
                 <div class="column text small textoEmpresa">
-                    <h6>@LojaCorp.Control.Company._Company.FantasyName</h6> -
+                    <h6>@LojaCorp.Control.Company._Company.FantasyName</h6>
                     <address>
                         @LojaCorp.Control.Company._Company.ComplementText
                         <br />
